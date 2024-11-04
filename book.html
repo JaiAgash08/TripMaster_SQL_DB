@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - TripMaster</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <h1>TripMaster</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#tours">Tours</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form -->
+    <section class="booking">
+        <h2>Book Your Trip</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="tour">Select Tour:</label>
+            <select id="tour" name="tour" required>
+                <option value="">--Please select a tour--</option>
+                <option value="City Tour">City Tour</option>
+                <option value="Nature Adventure">Nature Adventure</option>
+                <option value="Cultural Experience">Cultural Experience</option>
+                <option value="Beach Getaway">Beach Getaway</option>
+                <option value="Mountain Hiking">Mountain Hiking</option>
+            </select>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Date of Trip:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" required>
+            
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TripMaster. All rights reserved.</p>
+    </footer>
+</body>
+</html>
